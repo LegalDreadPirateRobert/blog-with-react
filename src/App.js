@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
-import Layout from './components/layout/Layout'
+import Burger from './Burger'
 import './App.css';
-import BurgerBuilder from "./containers/BurgerBuilder/BurgerBuilder"
 class App extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       
+    }
+  }
+  
   render() {
     return (
       <div>
-        <Layout>
-          <p>texting stuffs</p>
-          <BurgerBuilder />
-        </Layout>
+         <Burger/>
       </div>
     );
   }
